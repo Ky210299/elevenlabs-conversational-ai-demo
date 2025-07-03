@@ -1,0 +1,17 @@
+{
+  "name": "demo-chatbot",
+  "version": "1.0.0",
+  "description": "This demo is a simple chatbot that uses ElevenLabs' Conversational AI API and a interactive avatar syncronized with the ElevenLabs response.",
+  "main": "index.js",
+  "workspaces": [
+      "client",
+      "server"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,0 +1,37 @@
+# Dependencias
+# Ignora la carpeta node_modules de la raíz
+/node_modules
+node_modules
+
+# Archivos de Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Carpetas de build y artefactos
+# Esto ignorará cualquier carpeta 'dist' o 'build' en cualquier paquete
+dist/
+build/
+
+# Si tu webapp es de Next.js
+packages/webapp/.next/
+packages/webapp/out/
+
+# Si tu api genera una carpeta de build
+packages/api/build/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos del editor
+.vscode/
+.idea/

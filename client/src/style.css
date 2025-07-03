@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+body {
+  @apply bg-gray-900 text-white font-sans overflow-hidden;
+  font-family: 'Inter', sans-serif;
+}
+
+#avatar canvas {
+  @apply w-full h-full;
+}
+
+#chat-card {
+  @apply bg-gray-800/70 backdrop-blur-lg p-6 rounded-t-2xl border-t border-x border-white/20 shadow-2xl shadow-black/50;
+}
+
+.btn {
+  @apply w-full font-bold py-3 px-4 rounded-lg transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-4;
+}
+
+.btn-primary {
+  @apply bg-cyan-500 hover:bg-cyan-600 text-white focus:ring-cyan-400/50;
+}
+
+.btn-danger {
+  @apply bg-red-600 hover:bg-red-700 text-white focus:ring-red-400/50;
+}
+
+.btn-success {
+  @apply bg-green-500 hover:bg-green-600 text-white focus:ring-green-400/50;
+}
+
+.recording-indicator {
+  @apply w-5 h-5 bg-red-400 rounded-full transition-colors duration-300;
+}
+.recording-indicator.is-recording {
+  @apply bg-red-500;
+  animation: pulse-record 2s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+@keyframes pulse-record {
+  to {
+    box-shadow: 0 0 0 15px rgba(239, 68, 68, 0);
+  }
+}
+
+#transcript::-webkit-scrollbar {
+  width: 8px;
+}
+#transcript::-webkit-scrollbar-track {
+  @apply bg-black/20 rounded-full;
+}
+#transcript::-webkit-scrollbar-thumb {
+  @apply bg-cyan-500/50 rounded-full;
+}
+#transcript::-webkit-scrollbar-thumb:hover {
+  @apply bg-cyan-500/80;
+}
